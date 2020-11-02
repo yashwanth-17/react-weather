@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+#App {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-.App-logo {
-  height: 40vmin;
+#clouds {
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  animation: animate 60s infinite linear;
   pointer-events: none;
+  transition: 0.5s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#i1,
+#i2,
+#i3,
+#i4,
+#i5 {
+  width: 80%;
+}
+@keyframes animate {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
   }
 }
+#input {
+  font-size: 24px;
+  outline: none;
+  border: transparent;
+  background-color: transparent;
+  color: white;
+  width: min-content;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#input::selection {
+  background-color: black;
+}
+
+#input::placeholder {
+  color: lightgrey;
+}
+
+#content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+#btn {
+  outline: none;
+  border: 2px solid white;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+#btn:active {
+  transform: scale(0.8);
+}
+#desccont {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#tempcont {
+  display: flex;
+  align-items: center;
+}
+#temp {
+  font-size: 30px;
+}
+#desc {
+  margin: 0;
+  font-size: 22px;
+}
+#maxmincont {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#maxmincont section {
+  margin: 10px 15px;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#time {
+  margin: 10px 0;
 }

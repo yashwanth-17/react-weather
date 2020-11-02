@@ -1,0 +1,59 @@
+@media (max-width: 770px) {
+  #clouds {
+    width: 200%;
+  }
+  #i1,
+  #i2,
+  #i3,
+  #i4,
+  #i5 {
+    width: 100%;
+  }
+  #input {
+    font-size: 26px;
+    text-align: center;
+    margin: 20px 0;
+    transition: 0.5s;
+  }
+  #input:focus {
+    padding-top: 100px;
+  }
+  #content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  #btn {
+    font-size: 20px;
+  }
+  #btn:active {
+    transform: scale(0.8);
+  }
+  #desccont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tempcont {
+    display: flex;
+    align-items: center;
+  }
+  #temp {
+    font-size: 30px;
+  }
+  #desc {
+    margin: 0;
+    font-size: 22px;
+  }
+  #maxmincont {
+    display: flex;
+    justify-content: center;
+  }
+  #maxmincont section {
+    margin: 10px;
+    text-align: center;
+  }
+}
